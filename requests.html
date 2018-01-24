@@ -2,8 +2,9 @@
 <html lang="ru">
 	<head>
 		<meta charset="UTF-8">
-		<title>Заказы</title>
-
+		<title>Запросы</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/style.css">
@@ -11,12 +12,29 @@
 	</head>
 	<body>
 
+		<header class="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="header-holder">
+							<a href="http://sline.co.ua" class="logo" target="_blank"><strong>SLine</strong></a>
+							<nav class="header-nav">
+								<a href="goods.html">Товары</a>
+								<a href="orders.html">Заказы</a>
+								<a href="requests.html">Запросы</a>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
 		<div class="wrapper">
 
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 page-title">
-						<h1>Заказы</h4>
+						<h1>Запросы</h4>
 					</div>
 				</div>
 				<div class="row">
@@ -29,7 +47,10 @@
 							<div class="tab-content">
 								<div id="new" class="tab-pane fade in active">
 									<div class="order-search">
-										Сортировка по дате:
+										Сортировка по дате: 
+										<span>с</span>
+										<input type="date" name="#">
+										<span>по</span>
 										<input type="date" name="#">
 										<button type="button">Применить</button>
 									</div>
@@ -57,45 +78,47 @@
 												<button type="button"><i class="fa fa-check" aria-hidden="true"></i></button>
 											</td>
 										</tr>
-
 									</table>
-									<div class="pages-nav clearfix">
-										<button type="button" class="pages-nav_arrow"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></button>
-
+									
+									<div class="pages-nav">
 										<ul class="pages-nav_btns">
-											<li class="pages-nav_active-page">
+											<li>
+												<button type="button" class="nav-buttons">Предыдущая</button>
+											</li>
+											<li>
 												<button type="button" class="nav-buttons">1</button>
 											</li>
-											<li>
-												<button type="button" class="nav-buttons">2</button>
-											</li>
-											<li>
-												<button type="button" class="nav-buttons">3</button>
+											<li class="inactive">
+												<button type="button" class="nav-buttons">...</button>
 											</li>
 											<li>
 												<button type="button" class="nav-buttons">4</button>
 											</li>
-											<li>
+											<li class="active">
 												<button type="button" class="nav-buttons">5</button>
 											</li>
 											<li>
 												<button type="button" class="nav-buttons">6</button>
 											</li>
-											<li>
-												<button type="button" class="nav-buttons">7</button>
+											<li class="inactive">
+												<button type="button" class="nav-buttons">...</button>
 											</li>
 											<li>
-												<button type="button" class="nav-buttons">8</button>
+												<button type="button" class="nav-buttons">294</button>
+											</li>
+											<li>
+												<button type="button" class="nav-buttons">Следующая</button>
 											</li>
 										</ul>
-
-										<button type="button" class="pages-nav_arrow"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
 									</div>
-
 								</div>
+								
 								<div id="old" class="tab-pane fade">
 									<div class="order-search">
-										Сортировка по дате:
+										Сортировка по дате: 
+										<span>с</span>
+										<input type="date" name="#">
+										<span>по</span>
 										<input type="date" name="#">
 										<button type="button">Применить</button>
 									</div>
@@ -125,38 +148,38 @@
 										</tr>
 
 									</table>
-									<div class="pages-nav clearfix">
-										<button type="button" class="pages-nav_arrow"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></button>
+									
+									<div class="pages-nav">
 										<ul class="pages-nav_btns">
-											<li class="pages-nav_active-page">
+											<li>
+												<button type="button" class="nav-buttons">Предыдущая</button>
+											</li>
+											<li>
 												<button type="button" class="nav-buttons">1</button>
 											</li>
-											<li>
-												<button type="button" class="nav-buttons">2</button>
-											</li>
-											<li>
-												<button type="button" class="nav-buttons">3</button>
+											<li class="inactive">
+												<button type="button" class="nav-buttons">...</button>
 											</li>
 											<li>
 												<button type="button" class="nav-buttons">4</button>
 											</li>
-											<li>
+											<li class="active">
 												<button type="button" class="nav-buttons">5</button>
 											</li>
 											<li>
 												<button type="button" class="nav-buttons">6</button>
 											</li>
-											<li>
-												<button type="button" class="nav-buttons">7</button>
+											<li class="inactive">
+												<button type="button" class="nav-buttons">...</button>
 											</li>
 											<li>
-												<button type="button" class="nav-buttons">8</button>
+												<button type="button" class="nav-buttons">294</button>
+											</li>
+											<li>
+												<button type="button" class="nav-buttons">Следующая</button>
 											</li>
 										</ul>
-
-										<button type="button" class="pages-nav_arrow"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
 									</div>
-
 								</div>
 
 							</div>

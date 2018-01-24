@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Товары</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -10,6 +11,23 @@
 
 	</head>
 	<body>
+
+		<header class="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="header-holder">
+							<a href="http://sline.co.ua" class="logo" target="_blank"><strong>SLine</strong></a>
+							<nav class="header-nav">
+								<a href="goods.html">Товары</a>
+								<a href="orders.html">Заказы</a>
+								<a href="requests.html">Запросы</a>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
 
 		<div class="wrapper">
 
@@ -29,203 +47,217 @@
 								</div>
 							</div>
 						</div>
-					
-					
+
+
 						<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 item-col">
 							<div class="product active">
-								<div class="product-slider_wrap">
-									<div class="product-slider">
-										<a href="edit_photo.html" class="product-slide">
-											<div class="product-slide_img">
-												<img src="img/product/small/ws-01.jpg" alt="Женский костюм">
-											</div>
-										</a>
-									</div>
+								<div class="product-slide_img">
+									<img src="img/product/small/ws-01.jpg" alt="Женский костюм">
+									<a class="btn-edit-photo" href="edit_photo.html"><i class="fa fa-pencil" aria-hidden="true"></i></a>
 								</div>
 
 								<div class="holder-edit">
-									<div class="holder-edit_left">
+									<div class="edit-area">
+										<div class="product-code">
+											<span>Артикул:</span>
+											<strong>#F59S</strong>
+										</div>
 										<h5 class="product-title">Женский костюм</h5>
+									</div>
 
-										<div class="edit-area">
-											<div class="edit-row">
-												<input class="edit-field" type="text" value="Женский костюм">
-												<div class="edit-buttons">
-													<button><i class="fa fa-check" aria-hidden="true"></i></button>
-													<button><i class="fa fa-times" aria-hidden="true"></i></button>
-												</div>
+									<div class="edit-area">
+										<div class="edit-row">
+											<input class="edit-field" type="text" value="#F59S" placeholder="Артикул">
+											<div class="edit-buttons">
+												<button><i class="fa fa-times" aria-hidden="true"></i></button>
 											</div>
 										</div>
-
-									</div>
-									<a class="edit-block-link confirm" href="#"><i class="fa fa-check-square" aria-hidden="true"></i></a>
-								</div>
-
-
-								<div class="holder-edit">
-									<div class="holder-edit_left">
-										<div class="edit-area">
-											<div class="edit-row">
-												<div class="checkbox">
-													<label><input type="checkbox" value="">XS</label>
-												</div>
-											</div>
-											<div class="edit-row">
-												<div class="checkbox">
-													<label><input type="checkbox" value="">S</label>
-												</div>
-											</div>
-											<div class="edit-row">
-												<div class="checkbox">
-													<label><input type="checkbox" value="">M</label>
-												</div>
-											</div>
-											<div class="edit-row">
-												<div class="checkbox">
-													<label><input type="checkbox" value="">L</label>
-												</div>
-											</div>
-											<div class="edit-row">
-												<div class="checkbox">
-													<label><input type="checkbox" value="">XL</label>
-												</div>
+										<div class="edit-row">
+											<input class="edit-field" type="text" value="Женский костюм" placeholder="Название модели">
+											<div class="edit-buttons">
+												<button><i class="fa fa-times" aria-hidden="true"></i></button>
 											</div>
 										</div>
 									</div>
 
-									<a class="edit-block-link confirm" href="#"><i class="fa fa-check-square" aria-hidden="true"></i></a>
+									<button type="button" class="edit-block-link confirm"><i class="fa fa-check" aria-hidden="true"></i><span>Сохранить изменения</span></button>
 								</div>
 
+
 								<div class="holder-edit">
-									<div class="holder-edit_left">
+
+									<div class="edit-area">
+										<ul class="size-row">
+											<li class="size-item"><strong>XS</strong></li>
+											<li class="size-item"><strong>S</strong></li>
+											<li class="size-item"><strong>M</strong></li>
+											<li class="size-item"><strong>L</strong></li>
+										</ul>
+									</div>
+
+									<div class="edit-area">
+										<div class="edit-area">
+											<div class="edit-row">
+												<div class="checkbox">
+													<label><input type="checkbox" checked>XS</label>
+												</div>
+											</div>
+											<div class="edit-row">
+												<div class="checkbox">
+													<label><input type="checkbox" checked>S</label>
+												</div>
+											</div>
+											<div class="edit-row">
+												<div class="checkbox">
+													<label><input type="checkbox" checked>M</label>
+												</div>
+											</div>
+											<div class="edit-row">
+												<div class="checkbox">
+													<label><input type="checkbox" checked>L</label>
+												</div>
+											</div>
+											<div class="edit-row">
+												<div class="checkbox">
+													<label><input type="checkbox">XL</label>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<button type="button" class="edit-block-link confirm"><i class="fa fa-check" aria-hidden="true"></i><span>Сохранить изменения</span></button>
+								</div>
+
+								<div class="holder-edit preloader">
+									<div class="edit-area">
 										<div class="product-color_row">
 											<span>Бордовый</span>
 											<span>Темно синий</span>
 											<span>Светло серый (меланж)</span>
 											<span>Темно серый (антрацит)</span>
 										</div>
-										<div class="edit-area">
-											<div class="edit-row">
-												<input class="edit-field" type="text" value="Бордовый">
-												<div class="edit-buttons">
-													<button><i class="fa fa-check" aria-hidden="true"></i></button>
-													<button><i class="fa fa-times" aria-hidden="true"></i></button>
-												</div>
+									</div>
+
+									<div class="edit-area">
+										<div class="edit-row">
+											<input class="edit-field" type="text" value="Бордовый" placeholder="Введите цвет">
+											<div class="edit-buttons">
+												<button><i class="fa fa-times" aria-hidden="true"></i></button>
 											</div>
-											<div class="edit-row">
-												<input class="edit-field" type="text" value="Темно синий">
-												<div class="edit-buttons">
-													<button><i class="fa fa-check" aria-hidden="true"></i></button>
-													<button><i class="fa fa-times" aria-hidden="true"></i></button>
-												</div>
+										</div>
+										<div class="edit-row">
+											<input class="edit-field" type="text" value="Темно синий" placeholder="Введите цвет">
+											<div class="edit-buttons">
+												<button><i class="fa fa-times" aria-hidden="true"></i></button>
 											</div>
-											<div class="edit-row">
-												<input class="edit-field" type="text" value="Светло серый (меланж)">
-												<div class="edit-buttons">
-													<button><i class="fa fa-check" aria-hidden="true"></i></button>
-													<button><i class="fa fa-times" aria-hidden="true"></i></button>
-												</div>
+										</div>
+										<div class="edit-row">
+											<input class="edit-field" type="text" value="Светло серый (меланж)" placeholder="Введите цвет">
+											<div class="edit-buttons">
+												<button><i class="fa fa-times" aria-hidden="true"></i></button>
 											</div>
-											<div class="edit-row">
-												<input class="edit-field" type="text" value="Темно серый (антрацит)">
-												<div class="edit-buttons">
-													<button><i class="fa fa-check" aria-hidden="true"></i></button>
-													<button><i class="fa fa-times" aria-hidden="true"></i></button>
-												</div>
+										</div>
+										<div class="edit-row">
+											<input class="edit-field" type="text" value="Темно серый (антрацит)" placeholder="Введите цвет">
+											<div class="edit-buttons">
+												<button><i class="fa fa-times" aria-hidden="true"></i></button>
+											</div>
+										</div>
+										<div class="edit-row">
+											<input class="edit-field" type="text" value="" placeholder="Введите цвет">
+											<div class="edit-buttons">
+												<button><i class="fa fa-plus" aria-hidden="true"></i></button>
 											</div>
 										</div>
 									</div>
 
-									<a class="edit-block-link confirm" href="#"><i class="fa fa-check-square" aria-hidden="true"></i></a>
+									<button type="button" class="edit-block-link confirm"><i class="fa fa-check" aria-hidden="true"></i><span>Сохранить изменения</span></button>
+
 								</div>
 
 								<div class="holder-edit">
-									<div class="holder-edit_left">
+									<div class="edit-area">
 										<span>Флис</span>
+									</div>
 
-										<div class="edit-area">
-											<div class="edit-row">
-												<input class="edit-field" type="text" value="Флис">
-												<div class="edit-buttons">
-													<button><i class="fa fa-plus" aria-hidden="true"></i></button>
-													<button><i class="fa fa-check" aria-hidden="true"></i></button>
-													<button><i class="fa fa-times" aria-hidden="true"></i></button>
-												</div>
+									<div class="edit-area">
+										<div class="edit-row">
+											<input class="edit-field" type="text" value="Флис" placeholder="Введите название материала">
+											<div class="edit-buttons">
+												<button><i class="fa fa-times" aria-hidden="true"></i></button>
 											</div>
 										</div>
 									</div>
-									<a class="edit-block-link confirm" href="#"><i class="fa fa-check-square" aria-hidden="true"></i></a>
+
+									<button type="button" class="edit-block-link confirm"><i class="fa fa-check" aria-hidden="true"></i><span>Сохранить изменения</span></button>
 								</div>
 
 								<div class="holder-edit">
-									<div class="holder-edit_left">
+									<div class="edit-area">
 										<div class="edit-area">
 											<div class="edit-row">
-												<input class="edit-field" type="text" value="690">
+												<input class="edit-field" type="text" value="690" placeholder="Цена стандартная">
 												<div class="edit-buttons">
-													<button><i class="fa fa-check" aria-hidden="true"></i></button>
 													<button><i class="fa fa-times" aria-hidden="true"></i></button>
 												</div>
 											</div>
 
-											<div class="edit-row">
-												<input class="edit-field" type="text" value="897">
-												<div class="edit-buttons">
-													<button><i class="fa fa-check" aria-hidden="true"></i></button>
-													<button><i class="fa fa-times" aria-hidden="true"></i></button>
-												</div>
-											</div>
 											<div class="edit-activation">
 												<input type="checkbox" id="check" name="#" value="#">
 												<label for="check">Активировать скидку</label>
 											</div>
-										</div>
-									</div>
-									<a class="edit-block-link confirm" href="#"><i class="fa fa-check-square" aria-hidden="true"></i></a>
-								</div>
-
-								<div class="holder-edit">
-									<div class="holder-edit_left">
-										<p class="product-description">Все в предновогодней суете забывают о том, что наши родные нуждаются в заботе и внимании. Проявите любовь к своему близкому человеку: маме, жене, сестре, тете и подарите им частичку тепла.</p>
-
-										<div class="edit-area">
 
 											<div class="edit-row">
-												<textarea class="edit-field textarea-field" type="text">Все в предновогодней суете забывают о том, что наши родные нуждаются в заботе и внимании. Проявите любовь к своему близкому человеку: маме, жене, сестре, тете и подарите им частичку тепла.</textarea>
+												<input class="edit-field" type="text" value="" placeholder="Цена перечёркнутая">
 												<div class="edit-buttons">
-													<button><i class="fa fa-check" aria-hidden="true"></i></button>
 													<button><i class="fa fa-times" aria-hidden="true"></i></button>
 												</div>
 											</div>
 										</div>
 									</div>
-									<a class="edit-block-link confirm" href="#"><i class="fa fa-check-square" aria-hidden="true"></i></a>
+									<button type="button" class="edit-block-link confirm"><i class="fa fa-check" aria-hidden="true"></i><span>Сохранить изменения</span></button>
+								</div>
+
+								<div class="holder-edit">
+									<div class="edit-area">
+										<p class="product-description">Все в предновогодней суете забывают о том, что наши родные нуждаются в заботе и внимании. Проявите любовь к своему близкому человеку: маме, жене, сестре, тете и подарите им частичку тепла.</p>
+
+										<div class="edit-area">
+
+											<div class="edit-row">
+												<textarea class="edit-field textarea-field" type="text" placeholder="Введите описание товарап">Все в предновогодней суете забывают о том, что наши родные нуждаются в заботе и внимании. Проявите любовь к своему близкому человеку: маме, жене, сестре, тете и подарите им частичку тепла.</textarea>
+												<div class="edit-buttons">
+													<button><i class="fa fa-times" aria-hidden="true"></i></button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<button type="button" class="edit-block-link confirm"><i class="fa fa-check" aria-hidden="true"></i><span>Сохранить изменения</span></button>
 								</div>
 							</div>
 						</div>
 
 						<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 item-col">
 							<div class="product">
-								<div class="product-slider_wrap">
-									<div class="product-slider">
-										<a href="edit_photo.html" class="product-slide">
-											<div class="product-slide_img">
-												<img src="img/product/small/ws-01.jpg" alt="Женский костюм">
-											</div>
-										</a>
-									</div>
+							
+								<div class="product-slide_img">
+									<img src="img/product/small/ws-01.jpg" alt="Женский костюм">
+									<a class="btn-edit-photo" href="edit_photo.html"><i class="fa fa-pencil" aria-hidden="true"></i></a>
 								</div>
 
 								<div class="holder-edit">
-									<div class="holder-edit_left">
+									<div class="edit-area">
+										<div class="product-code">
+											<span>Артикул:</span>
+											<strong>#F59S</strong>
+										</div>
 										<h5 class="product-title">Женский костюм</h5>
 									</div>
-									<a class="edit-block-link" href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+									<button type="button" class="edit-block-link"><i class="fa fa-pencil" aria-hidden="true"></i><span>Редактировать</span></button>
 								</div>
 
-
 								<div class="holder-edit">
-									<div class="holder-edit_left">
+									<div class="edit-area">
 										<ul class="size-row">
 											<li class="size-item"><strong>S</strong></li>
 											<li class="size-item"><strong>M</strong></li>
@@ -233,11 +265,11 @@
 											<li class="size-item"><strong>XL</strong></li>
 										</ul>
 									</div>
-									<a class="edit-block-link" href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+									<button type="button" class="edit-block-link"><i class="fa fa-pencil" aria-hidden="true"></i><span>Редактировать</span></button>
 								</div>
 
 								<div class="holder-edit">
-									<div class="holder-edit_left">
+									<div class="edit-area">
 										<div class="product-color_row">
 											<span>Бордовый</span>
 											<span>Темно синий</span>
@@ -246,117 +278,44 @@
 										</div>
 									</div>
 
-									<a class="edit-block-link" href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+									<button type="button" class="edit-block-link"><i class="fa fa-pencil" aria-hidden="true"></i><span>Редактировать</span></button>
 								</div>
 
 								<div class="holder-edit">
-									<div class="holder-edit_left">
+									<div class="edit-area">
 										<span>Флис</span>
 									</div>
-									<a class="edit-block-link" href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+									<button type="button" class="edit-block-link"><i class="fa fa-pencil" aria-hidden="true"></i><span>Редактировать</span></button>
 								</div>
 
 								<div class="holder-edit">
-									<div class="holder-edit_left">
+									<div class="edit-area">
 										<div class="actual-price">
 											<span>690</span>
 											<i>грн.</i>
 										</div>
-										<div class="old-price">
-											<span>897 грн.</span>
-										</div>
-									</div>
-									<a class="edit-block-link" href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-								</div>
-
-								<div class="holder-edit">
-									<div class="holder-edit_left">
-										<p class="product-description">Все в предновогодней суете забывают о том, что наши родные нуждаются в заботе и внимании. Проявите любовь к своему близкому человеку: маме, жене, сестре, тете и подарите им частичку тепла.</p>
-									</div>
-									<a class="edit-block-link" href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 item-col">
-							<div class="product">
-								<div class="product-slider_wrap">
-									<div class="product-slider">
-										<a href="edit_photo.html" class="product-slide">
-											<div class="product-slide_img">
-												<img src="img/product/small/ws-01.jpg" alt="Женский костюм">
-											</div>
-										</a>
-									</div>
-								</div>
-
-								<div class="holder-edit">
-									<div class="holder-edit_left">
-										<h5 class="product-title">Женский костюм</h5>
-									</div>
-									<a class="edit-block-link" href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-								</div>
-
-								<div class="holder-edit">
-									<div class="holder-edit_left">
-										<ul class="size-row">
-											<li class="size-item"><strong>S</strong></li>
-											<li class="size-item"><strong>M</strong></li>
-											<li class="size-item"><strong>L</strong></li>
-											<li class="size-item"><strong>XL</strong></li>
-										</ul>
-									</div>
-									<a class="edit-block-link" href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-								</div>
-
-								<div class="holder-edit">
-									<div class="holder-edit_left">
-										<div class="product-color_row">
-											<span>Бордовый</span>
-											<span>Темно синий</span>
-											<span>Светло серый (меланж)</span>
-											<span>Темно серый (антрацит)</span>
-										</div>
-									</div>
-
-									<a class="edit-block-link" href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-								</div>
-
-								<div class="holder-edit">
-									<div class="holder-edit_left">
-										<span>Флис</span>
-									</div>
-									<a class="edit-block-link" href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-								</div>
-
-								<div class="holder-edit">
-									<div class="holder-edit_left">
 										<div class="actual-price">
-											<span>690</span>
-											<i>грн.</i>
-										</div>
-										<div class="old-price">
-											<span>897 грн.</span>
+											<strike>897 грн.</strike>
 										</div>
 									</div>
-									<a class="edit-block-link" href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+									<button type="button" class="edit-block-link"><i class="fa fa-pencil" aria-hidden="true"></i><span>Редактировать</span></button>
 								</div>
 
 								<div class="holder-edit">
-									<div class="holder-edit_left">
+									<div class="edit-area">
 										<p class="product-description">Все в предновогодней суете забывают о том, что наши родные нуждаются в заботе и внимании. Проявите любовь к своему близкому человеку: маме, жене, сестре, тете и подарите им частичку тепла.</p>
 									</div>
-									<a class="edit-block-link" href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+									<button type="button" class="edit-block-link"><i class="fa fa-pencil" aria-hidden="true"></i><span>Редактировать</span></button>
 								</div>
 							</div>
 						</div>
-						
+
 					</div>
 				</div>
 			</div>
 			<footer class="footer-main">All Right Reserved. &copy; S-Line.co.ua 2018</footer>
 		</div>
-		
+
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
