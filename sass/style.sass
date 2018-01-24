@@ -634,37 +634,6 @@ body
 	i
 		color: #fff
 		font-size: 20px
-	
-@keyframes spinner
-	to
-		transform: rotate(360deg)
-
-.preloader
-	position: relative
-	&:before
-		content: ''
-		box-sizing: border-box
-		position: absolute
-		top: 50%
-		left: 50%
-		width: 30px
-		height: 30px
-		margin-top: -15px
-		margin-left: -15px
-		border-radius: 50%
-		border: 2px solid #ccc
-		border-top-color: #333
-		animation: spinner .6s linear infinite
-		z-index: 10
-	&:after
-		content: ''
-		position: absolute
-		top: 0
-		right: 0
-		width: 100%
-		height: 100%
-		background-color: rgba(255,255,255,.5)
-		z-index: 9
 
 .product-code
 	display: block
@@ -678,4 +647,35 @@ body
 	right: 10px
 	top: 10px
 
+@keyframes spinner
+	to
+		transform: rotate(360deg)
+
+.preloader
+	position: relative
+	border-color: transparent
+	&:before
+		content: ''
+		box-sizing: border-box
+		position: absolute
+		top: 50%
+		left: 50%
+		width: 30px
+		height: 30px
+		margin-top: -15px
+		margin-left: -15px
+		border-radius: 50%
+		border: 2px solid #eee
+		border-top-color: #333
+		animation: spinner .6s linear infinite
+		z-index: 10
+	&:after
+		content: ''
+		position: absolute
+		top: 0
+		right: 0
+		width: 100%
+		height: 100%
+		background-color: rgba(0,0,0,.3)
+		z-index: 9
 
